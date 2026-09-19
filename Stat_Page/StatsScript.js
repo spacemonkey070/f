@@ -41,7 +41,7 @@ function renderMatchSection() {
     } else {
         team1Name.textContent = 'No team saved Yet';
     }
-
+    
 // --- save second team ---
     saveTeam2Btn.addEventListener('click', () => {
         const name = team2Input.value.trim();
