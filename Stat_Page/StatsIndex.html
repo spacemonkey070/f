@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stats</title>
+    <link rel="stylesheet" href="StatsStyle.css">
+</head>
+<body>
+    <div class="tab-bar">
+        <button class="tab-btn" id="game-tab">Teams</button>
+        <button class="tab-btn" id="team-tab">Stats</button>
+        <button class="tab-btn" if="stats-tab">Games</button>
+    </div>
+
+    <div id="matchContainer">
+        <div class="team-selection">
+            <h2 id="team1Name"></h2>
+
+            <div id="teamContainer">
+                <div class="teamside LeftSide">
+                    <select id="teamSelect">
+                        <option value="" disabled selected hidden>My Team</option>
+                    </select>
+                </div>
+                <label>vs</label>
+                <div class="teamside RightSide">
+                    <input type="text" id="team2Input" placeholder="Enter opponent">
+                    <button id="saveTeam2Btn">Save</button>
+                </div>  
+            </div>
+            <h2 id="team2Name" style="display:none;"></h2>
+        </div>
+        <p id="matchDate"></p>
+    </div>
+</body>
+</html>
